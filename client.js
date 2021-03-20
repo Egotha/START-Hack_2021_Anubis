@@ -1,20 +1,21 @@
-import {ReactInstance} from 'react-360-web';
+// Auto-generated content.
+// This file contains the boilerplate to set up your React app.
+// If you want to modify your application, start in "index.vr.js"
 
-function init(bundle, parent, options = {}) {
-  const r360 = new ReactInstance(bundle, parent, {
+// Auto-generated content.
+import {VRInstance} from 'react-vr-web';
+
+function init(bundle, parent, options) {
+  const vr = new VRInstance(bundle, 'musical_forest_reactVR', parent, {
     // Add custom options here
-    fullScreen: true,
     ...options,
   });
-
-  // Render your app content to the default cylinder surface
-  r360.renderToSurface(
-    r360.createRoot('OfficeTour', { /* initial props */ }),
-    r360.getDefaultSurface()
-  );
-
-  // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('frontDesk.jpeg'));
+  vr.render = function() {
+    // Any custom behavior you want to perform on each frame goes here
+  };
+  // Begin the animation loop
+  vr.start();
+  return vr;
 }
 
-window.React360 = {init};
+window.ReactVR = {init};

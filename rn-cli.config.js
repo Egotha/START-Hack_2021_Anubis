@@ -1,7 +1,7 @@
 'use strict';
 
 var path = require('path');
-var blacklist = require('metro-bundler/src/blacklist');
+var blacklist = require('./node_modules/react-native/packager/blacklist');
 
 var config = {
   getProjectRoots() {
@@ -22,7 +22,7 @@ var config = {
   },
 
   getProvidesModuleNodeModules() {
-    return ['react-native', 'react-360'];
+    return ['react-native', 'react-vr'];
   },
 };
 

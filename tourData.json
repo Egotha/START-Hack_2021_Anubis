@@ -1,0 +1,27 @@
+{
+    "firstPhotoId": "1", 
+    "firstPhotoRotation": 0, 
+    "Photos": {
+        "1":{
+            "rotationOffset": 50, 
+            "uri":"frontDesk.jpeg", 
+            "Tooltips":[{
+                "text": "The front desk", 
+                "rotationY": 100,
+                "linkedPhotoId": "2"
+            }], 
+
+        "2":{
+            "rotationOffset": 50, 
+            "uri":"stairwell.jpeg", 
+            "Tooltips":[{
+                "text": "The Stairwell", 
+                "rotationY": 100,
+                "linkedPhotoId": "1"
+                }]
+        }
+    }
+ 
+}
+}
+
